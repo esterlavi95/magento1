@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Es_CustomerLogin>
+            <version>0.0.1</version>
+        </Es_CustomerLogin>
+    </modules>
+    <global>
+        <models>
+            <es_customerlogin>
+                <class>Es_CustomerLogin_Model</class>
+                <resourceModel>es_customerlogin_resource</resourceModel>
+            </es_customerlogin>
+            <es_customerlogin_resource>
+                <class>Es_CustomerLogin_Model_Resource</class>
+                <entities>
+                    <counter>
+                        <table>customer_log</table>
+                    </counter>
+                </entities>
+            </es_customerlogin_resource>
+        </models>
+        <resources>
+            <es_customerlogin_setup>
+                <setup>
+                    <module>Es_CustomerLogin</module>
+                </setup>
+            </es_customerlogin_setup>
+        </resources>
+    </global>
+</config>
