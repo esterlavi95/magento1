@@ -27,5 +27,16 @@
                 </setup>
             </es_customerlogin_setup>
         </resources>
+        <events>
+            <customer_login>
+                <observers>
+                    <es_customerlogin>
+                        <class>es_customerlogin/observer</class>
+                        <method>customerLogin</method>
+                        <type>singleton</type>
+                    </es_customerlogin>
+                </observers>
+            </customer_login>
+        </events>
     </global>
 </config>
